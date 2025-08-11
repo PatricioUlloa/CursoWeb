@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/02-Bootstrap/Estilos/Style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Componente</title>
+</head>
+
+<body>
+
+
+    <div class="container-fluid bg-dark text-white">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="/CursoWeb/02-Bootstrap/Imagenes/Duck.png" alt="Duck" width="32" height="24"
+                        class="d-inline-block align-text-top">
+                    Duck Studio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
+                        <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+                        <li class="nav-item"><a href="#comentarios" class="nav-link">Comentarios</a></li>
+                        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="inicio" class="row mt-5">
+            <div class="col-12">
+                <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/CursoWeb/02-Bootstrap/Imagenes/Image04.jpg" class="d-block w-100" alt="City">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <h5>Londres, Inglaterra </h5>
+                                <p>La imagen muestra la ciudad de Londres.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/CursoWeb/02-Bootstrap/Imagenes/Image10.jpg" class="d-block w-100" alt="City">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <h5>Brujas, Bélgica</h5>
+                                <p>La imagen muestra un canal en Brujas.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/CursoWeb/02-Bootstrap/Imagenes/Image11.jpg" class="d-block w-100" alt="City">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <h5>Nueva York, Estados Unidos</h5>
+                                <p>La imagen muestra una vista aérea de Central Park en la ciudad de Nueva York.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/CursoWeb/02-Bootstrap/Imagenes/Image03.jpg" class="d-block w-100" alt="City">
+                            <div class="carousel-caption d-none d-sm-block">
+                                <h5>Estocolmo, Suecia</h5>
+                                <p>La imagen muestra una vista panorámica de la ciudad de Estocolmo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="servicios" class="row mt-5">
+            <div class="col-12 text-center mt-5">
+                <div class="display-4 fw-medium">Servicios</div>
+                <p class="lead">Ofrecemos una variedad de servicios para satisfacer tus necesidades.</p>
+            </div>
+
+            <div class="col-12 text-center mt-2">
+                <i class="bi bi-android2 font-size-icono mx-2"></i>
+                <i class="bi bi-windows font-size-icono mx-2"></i>
+                <i class="bi bi-apple  font-size-icono mx-2"></i>
+            </div>
+
+            <div class="col-12 mt-4 mb-5">
+                <div class="row mx-1 py-3 border rounded align-items-center">
+                    <div class="col-12 col-lg-4 mb-2 mb-lg-0 text-center">
+                        <div class="h5 text-center mt-3">
+                            Suscríbete
+                        </div>
+                        <hr>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, error
+                            molestias! Dicta soluta ex consectetur magnam accusamus, necessitatibus eaque nobis!
+                        </p>
+                        <a href="#" class="btn btn-outline-info mb-3 mb-lg-0 mt-0 mt-lg-2">Acceder</a>
+                    </div>
+                    <div class="col-12 col-lg-8 ">
+                        <img src="/CursoWeb/02-Bootstrap/Imagenes/Image09.jpg" class="img-fluid rounded" alt="Consultas">
+                    </div>
+                    <div class="col-12 pt-4 px-5">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, error
+                            molestias! Dicta soluta ex consectetur magnam accusamus, necessitatibus eaque nobis!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, error
+                            molestias! Dicta soluta ex consectetur magnam accusamus, necessitatibus eaque nobis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="comentarios" class="row mt-5">
+            <div class="col-12 text-center">
+                <div class="display-4 fw-medium">Comentarios</div>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis dolorum molestiae laboriosam
+                    quia atque soluta delectus totam natus ipsum iusto?
+                </p>
+            </div>
+
+            <div class="col-12 px-4 my-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
+                        <img src="/CursoWeb/02-Bootstrap/Imagenes/Image12.jpg" class="img-fluid rounded" alt="Comentarios">
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-8 col-xl-9 border rounded">
+
+                        <div class="accordion accordion-flush" id="accordionComentarios">
+                            <div class="accordion-item bg-dark text-white">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed  bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <i class="bi bi-chat-square-text me-3"></i>
+                                        <span class="me-4"> Comentario #1 </span>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionComentarios">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit. Eaque rem fuga id qui ipsa accusantium ex doloremque perspiciatis a,
+                                        assumenda voluptatem doloribus itaque, quaerat impedit animi maiores. Sunt
+                                        laborum voluptate ad, voluptas veritatis quo iusto quos animi nemo temporibus
+                                        ipsa! Incidunt, optio ea? Iure laudantium voluptatum sed ipsa beatae nisi nihil,
+                                        inventore libero, harum, quibusdam accusantium? Doloremque ipsum laudantium
+                                        recusandae ipsam aspernatur quia, debitis eum quisquam ducimus est sed ab
+                                        temporibus expedita ullam, modi et consequuntur tempore vel odit tenetur!
+                                        Inventore soluta corrupti reiciendis aperiam a in odit deleniti ipsum culpa
+                                        possimus explicabo sunt saepe, praesentium corporis accusamus, impedit nulla!.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item  bg-dark text-white">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed  bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <i class="bi bi-chat-square-text me-3"></i>
+                                        <span class="me-4"> Comentario #2 </span>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-white"></i>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionComentarios">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Alias vitae praesentium quos sint quod facilis, tempore numquam eius incidunt
+                                        illum minus dolor inventore voluptatibus totam vero architecto sit porro labore
+                                        quam! Dolorum, ipsam cum id velit, tempora eius, ratione quasi excepturi quos
+                                        corrupti atque incidunt nemo. Vero maxime quasi doloremque ex sit sed atque
+                                        explicabo numquam eveniet dolor provident et hic, nobis in sequi, at unde labore
+                                        repudiandae voluptatem aliquam saepe sunt mollitia? Est et pariatur quis
+                                        perspiciatis laborum tenetur.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark text-white">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed  bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        <i class="bi bi-chat-square-text me-3"></i>
+                                        <span class="me-4"> Comentario #3 </span>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-white"></i>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionComentarios">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Inventore impedit natus, nisi repudiandae ab qui perspiciatis ut dolorum aliquam
+                                        nihil est porro amet! Quaerat aliquid minima doloremque nam ipsa quam odio,
+                                        nulla accusamus id debitis voluptates voluptas. Eaque dolor facilis consequuntur
+                                        corrupti saepe quidem! Pariatur, doloribus repellendus minus cum consequatur
+                                        laudantium veritatis consequuntur. Modi soluta aliquid fugiat tenetur labore vel
+                                        est quae aperiam commodi! Iusto in quam enim atque consequatur odit veniam
+                                        possimus architecto maxime voluptatibus debitis quidem esse illum quibusdam
+                                        ipsum amet harum obcaecati libero, ab quis corporis totam sunt dolorem beatae.
+                                        Nihil facere minima animi quidem eos repudiandae laboriosam tenetur laudantium
+                                        delectus obcaecati, quasi consequatur quo. Corrupti incidunt dolores praesentium
+                                        labore facilis, ut voluptates neque quibusdam laborum hic quam! Vel corrupti
+                                        sunt repellat eum nobis modi error a pariatur libero nam dolorem iusto id autem,
+                                        obcaecati maxime ut quia dolores itaque! Ducimus voluptatem incidunt
+                                        necessitatibus doloremque culpa in.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-dark text-white">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed  bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false" aria-controls="flush-collapseFour">
+                                        <i class="bi bi-chat-square-text me-3"></i>
+                                        <span class="me-4"> Comentario #4 </span>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-white"></i>
+                                        <i class="bi bi-star me-2 text-white"></i>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionComentarios">
+                                    <div class="accordion-body"> Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Nobis neque ea recusandae debitis dolore eius assumenda culpa nesciunt
+                                        consequuntur tempora praesentium quam voluptatibus blanditiis repellendus, quo
+                                        temporibus repudiandae ipsum tenetur quod distinctio, voluptate dolores. Quis
+                                        quas nihil qui rerum, reiciendis dolore eaque cumque, ex suscipit minima,
+                                        accusamus maiores id ducimus?</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-dark text-white">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed  bg-dark text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                        aria-expanded="false" aria-controls="flush-collapseFive">
+                                        <i class="bi bi-chat-square-text me-3"></i>
+                                        <span class="me-4"> Comentario #5 </span>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-primary"></i>
+                                        <i class="bi bi-star me-2 text-white"></i>
+                                        <i class="bi bi-star me-2 text-white"></i>
+                                        <i class="bi bi-star me-2 text-white"></i>
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionComentarios">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Nam omnis beatae fuga et. Perferendis, harum at dolore praesentium quaerat
+                                        facilis temporibus veritatis voluptatum nobis doloribus vero nesciunt asperiores
+                                        reiciendis minima quibusdam dolor sapiente ipsa quis? Ut at eveniet quae
+                                        reprehenderit totam, impedit quis incidunt sequi, ducimus dolore veritatis vero
+                                        debitis sit delectus illum dolorem? Tenetur porro architecto veritatis
+                                        necessitatibus eveniet.</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="col-auto text-center mt-5 pt-5">
+        <div class="h6">
+            <small>
+                &nbsp;&nbsp;&nbsp;&#95;&#95;&#95; <br>
+                &#95;&#95;&#95;&nbsp;&#40;&nbsp;&nbsp;&nbsp;&#111;&nbsp;&#41;&gt; <br>
+                &#92;&nbsp;&nbsp;&lt;&#95;&#46;&nbsp;&nbsp;&nbsp;&#41; <br>
+                &nbsp;&#96;&#45;&#45;&#45;&#45;&#45;&#180;
+            </small>
+        </div>
+        <p class="fst-italic">
+            <small> &copy; 2025 - Curso HTML - CSS - JavaScript - Bootstrap</small>
+        </p>
+    </div>
+</footer>
+
+</html>

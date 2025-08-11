@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Normalizar sitio web-->
+    <link rel="stylesheet" href="/CursoWeb/01-Fundamentos/Estilos/normalize.css" />
+    <!-- Fuente Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Estilos-->
+    <link rel="stylesheet" href="/CursoWeb/01-Fundamentos/Estilos/estiloColor.css" />
+    <link rel="stylesheet" href="/CursoWeb/01-Fundamentos/Estilos/estilo.css" />
+    <title>Fundamentos</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-header bg-primary-600 text-center">
+            <h1>Curso sitio web</h1>
+        </div>
+        <div class="col">
+            <div class="card card-inline-block">
+                <div class="card-header bg-primary-800 text-light">
+                    <h2>Encabezados - Títulos</h2>
+                </div>
+                <div class="card-body">
+                    <h1>Hola Mundo Título h1</h1>
+                    <h2>Hola Mundo h2</h2>
+                    <h3>Hola Mundo h3</h3>
+                    <h4>Hola Mundo h4</h4>
+                    <h5>Hola Mundo h5</h5>
+                </div>
+            </div>
+
+            <div class="card card-inline-block">
+                <div class="card-header bg-primary-800 text-light">
+                    <h2>Formato de Textos</h2>
+                </div>
+                <div class="card-body">
+                    <p>Esto es un parrafo</p>
+                    Ejemplo: <b>Esto es un texto negrita</b> <br />
+                    Ejemplo: <i>Esto es un texto cursiva</i> <br />
+                    Ejemplo: <u>Esto es un texto subrayado</u> <br />
+                    Ejemplo: <s>Esto es un texto tachado</s> <br />
+                    Ejemplo: <mark>Esto es un texto resaltado</mark> <br />
+                    Ejemplo: <small>Esto es un texto pequeño</small> <br />
+                    Ejemplo: <strong>Esto es un texto fuerte</strong> <br />
+                    Ejemplo: <em>Esto es un texto enfatizado</em> <br />
+                    Ejemplo: <del>Esto es un texto eliminado</del> <br />
+                    Ejemplo: <ins>Esto es un texto insertado</ins> <br />
+                    Ejemplo: <sub>Esto es un texto subíndice</sub> <br />
+                    Ejemplo: <sup>Esto es un texto superíndice</sup> <br />
+                    Ejemplo: <code>Esto es un texto de código</code> <br />
+                    Ejemplo: <kbd>Esto es un texto de teclado</kbd> <br />
+                    Ejemplo: <samp>Esto es un texto de muestra</samp> <br />
+                    Ejemplo: <var>Esto es un texto de variable</var> <br />
+                    Ejemplo: <cite>Esto es un texto de cita</cite> <br />
+                    Ejemplo: <q>Esto es un texto de cita corta</q> <br />
+                    Ejemplo: <blockquote>Esto es un texto de cita larga</blockquote>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-inline-block">
+                <div class="card-header bg-primary-800 text-light">
+                    <h2>Listas - Índices</h2>
+                </div>
+                <div class="card-body">
+                    <p>Lista de elementos</p>
+                    <ul>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                    </ul>
+                    <p>Lista de elementos ordenados</p>
+                    <ol>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card card-inline-block">
+                <div class="card-header bg-primary-800 text-light">
+                    <h2>Enlaces - Hipervínculos</h2>
+                </div>
+                <div class="card-body">
+                    <p>Enlaces a sitios web</p>
+                    <ul>
+                        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+                        <li><a href="https://www.youtube.com" target="_parent">YouTube</a></li>
+                        <li><a href="https://www.facebook.com" target="_top">Facebook</a></li>
+                    </ul>
+                    <p>Enlaces a secciones internas</p>
+                    <ul>
+                        <li><a href="#encabezados">Encabezados</a></li>
+                        <li><a href="#formulario">Formulario</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="col">
+            <div class="card card-inline-block">
+                <div class="card-header bg-primary-800 text-light">
+                    <h2>Imágenes - Hipervínculos</h2>
+                </div>
+                <div class="card-body">
+                    <p>Imágenes sin enlaces</p>
+                    <img class="img-perro" src="/CursoWeb/01-Fundamentos/Imagenes/Perro01.JPG" alt="Imagen de ejemplo" />
+
+                    <p>Imágenes con enlaces</p>
+                    <a href="https://www.google.com" target="_blank">
+                        <img src="/CursoWeb/01-Fundamentos/Imagenes/google01.JPG" alt="google" height="100px" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-inline-block ">
+                <div class="card-header bg-primary-800 text-light">
+                    <h2>Tablas</h2>
+                </div>
+
+                <div class="card-body">
+                    <table border="1" cellpadding="5" cellspacing="0">
+                        <caption>
+                            Lista de Personas
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>Ciudad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ana</td>
+                                <td>25</td>
+                                <td>Madrid</td>
+                            </tr>
+                            <tr>
+                                <td>Juan</td>
+                                <td>30</td>
+                                <td>Barcelona</td>
+                            </tr>
+                            <tr>
+                                <td>Pedro</td>
+                                <td>28</td>
+                                <td>Valencia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br><br>
+                    <table border="1" cellpadding="5" cellspacing="0">
+                        <caption>
+                            Lista de Personas - Convinar Celdas
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>Ciudad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ana</td>
+                                <td>25</td>
+                                <td>Madrid</td>
+                            </tr>
+                            <tr>
+                                <td>Juan</td>
+                                <td colspan="2">sin información</td>
+                            </tr>
+                            <tr>
+                                <td>Pedro</td>
+                                <td>28</td>
+                                <td>Valencia</td>
+                            </tr>
+                            <tr>
+                                <td>Hugo</td>
+                                <td rowspan="2" colspan="2">sin información</td>
+                            </tr>
+                            <tr>
+                                <td>Yoshi</td>
+                            </tr>
+                            <tr>
+                                <td>Maria</td>
+                                <td>30</td>
+                                <td>Santiago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary-800 text-light">
+                <h2>Formulario</h2>
+            </div>
+            <div class="card-body">
+                <form action="enviando.html" method="get">
+                    <label class="label" for="nombre">Nombre:</label>
+                    <input class="input" type="text" id="nombre" name="nombre" placeholder="Juan Perez" required />
+                    <br><br>
+                    <label class="label" for="edad">Edad:</label>
+                    <input class="input" type="number" id="edad" name="edad" placeholder="21" />
+                    <br><br>
+                    <label class="label" for="ciudad">Ciudad:</label>
+                    <select class="input" id="ciudad" name="ciudad" required>
+                        <option value="">Seleccione...</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="santiago">Santiago</option>
+                    </select>
+                    <br><br>
+                    <label class="label" for="email">Correo Electrónico:</label>
+                    <input class="input" type="email" id="email" name="email" placeholder="usuario@correo.cl" />
+                    <br><br>
+                    <label class="label" for="comentarios">Comentarios:</label>
+                    <textarea class="input" id="comentarios" name="comentarios" rows="4"
+                        placeholder="Escribe tus comentarios aquí..."></textarea>
+                    <br><br>
+                    <label class="label" for="genero">Genero:</label>
+                    <div class="input">
+                        <input type="radio" id="masculino" name="genero" value="masculino" />
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="genero" value="femenino" />
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" id="otro" name="genero" value="otro" checked />
+                        <label for="otro">Otro</label>
+                    </div>
+                    <br><br>
+                    <label class="label" for="color">Color:</label>
+                    <div class="input">
+                        <input class="center-block" type="color" id="color" name="color" value="#ff0000" />
+                    </div>
+
+                    <br><br>
+                    <label class="label" for="fecha">Fecha de Nacimiento:</label>
+                    <input class="input" type="date" id="fecha" name="fecha" />
+                    <br><br>
+                    <label class="label" for="hora">Hora de Registro:</label>
+                    <input class="input" type="time" id="hora" name="hora" />
+                    <br><br>
+                    <label class="label" for="semana">Semana:</label>
+                    <input class="input" type="week" id="semana" name="semana" />
+                    <br><br>
+                    <label class="label" for="archivo">Subir Archivo:</label>
+                    <input class="input" type="file" id="archivo" name="archivo" accept=".jpg, .jpeg, .png, .pdf" />
+                    <br><br>
+                    <div class="input text-center center-block">
+                        <input type="checkbox" id="terminos" name="terminos" required />
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                    </div>
+                    <br><br>
+                    <button class="btn bg-primary text-secondary py-1 mx-1" type="reset">Limpiar</button>
+                    <button class="btn bg-primary text-secondary py-1 mx-1" type="submit">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card card-inline-block ">
+            <div class="card-header bg-orange">
+                <h2>Imagenes</h2>
+            </div>
+            <img class="card-img" src="/CursoWeb/01-Fundamentos/Imagenes/Paisaje01.JPG" alt="Paisaje" />
+            <div class="card-body bg-orange-100">
+                <h2 class="text-center">Imagen de Paisaje</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique expedita consectetur esse
+                    doloribus sit sunt quibusdam labore distinctio fuga nostrum qui, provident dolorum, officiis error
+                    voluptas hic repellat fugiat aliquam quae perferendis perspiciatis! Excepturi debitis culpa quia
+                    porro expedita laborum dolorum impedit quibusdam nulla. Soluta repudiandae facere fuga aliquam
+                    debitis!</p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="text-center">
+        &nbsp;&nbsp;&nbsp;&nbsp;&#95;&#95;&#95; <br>
+        &#95;&#95;&#95;&nbsp;&#40;&nbsp;&nbsp;&nbsp;&#111;&nbsp;&#41;&gt; <br>
+        &#92;&nbsp;&nbsp;&lt;&#95;&#46;&nbsp;&nbsp;&nbsp;&#41; <br>
+        &nbsp;&nbsp;&#96;&#45;&#45;&#45;&#45;&#45;&#180; <br>
+        <p>
+            &copy; 2025 - Curso HTML - CSS - JavaScript - Bootstrap
+        </p>
+    </div>
+</footer>
+
+</html>
