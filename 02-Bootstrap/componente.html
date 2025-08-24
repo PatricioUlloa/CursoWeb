@@ -14,8 +14,9 @@
 <body>
 
 
-    <div class="container-fluid bg-dark text-white">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container-fluid bg-dark text-white" style="position: relative;"
+        data-bs-spy="scroll" data-bs-target="#navbar-principal" data-bs-offset="0" tabindex="0">
+        <nav id="navbar-principal" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div class="container">
                 <a href="#" class="navbar-brand">
                     <img src="/CursoWeb/02-Bootstrap/Imagenes/Duck.png" alt="Duck" width="32" height="24"
@@ -32,7 +33,7 @@
                         <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
                         <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
                         <li class="nav-item"><a href="#comentarios" class="nav-link">Comentarios</a></li>
-                        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                        <li class="nav-item"><a href="#suscribete" class="nav-link">Suscríbete</a></li>
                     </ul>
                 </div>
             </div>
@@ -123,7 +124,8 @@
                         <a href="#" class="btn btn-outline-info mb-3 mb-lg-0 mt-0 mt-lg-2">Acceder</a>
                     </div>
                     <div class="col-12 col-lg-8 ">
-                        <img src="/CursoWeb/02-Bootstrap/Imagenes/Image09.jpg" class="img-fluid rounded" alt="Consultas">
+                        <img src="/CursoWeb/02-Bootstrap/Imagenes/Image09.jpg" class="img-fluid rounded"
+                            alt="Consultas">
                     </div>
                     <div class="col-12 pt-4 px-5">
                         <p>
@@ -149,7 +151,8 @@
             <div class="col-12 px-4 my-5">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
-                        <img src="/CursoWeb/02-Bootstrap/Imagenes/Image12.jpg" class="img-fluid rounded" alt="Comentarios">
+                        <img src="/CursoWeb/02-Bootstrap/Imagenes/Image12.jpg" class="img-fluid rounded"
+                            alt="Comentarios">
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-8 col-xl-9 border rounded">
@@ -302,8 +305,148 @@
             </div>
 
         </div>
+
+        <div id="suscribete" class="row mt-5 mb-5">
+            <div class="col-12 text-center mt-5">
+                <div class="display-4 fw-medium">Suscríbete</div>
+                <p class="lead"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ex repellendus
+                    illum, et tempore, unde delectus, dolores adipisci totam voluptatum in eos molestias incidunt
+                    minima! Labore fugiat reprehenderit dolorum explicabo?</p>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+                <div class="card text-center bg-light">
+                    <div class="card-body">
+                        <div class="h2">
+                            $9.99
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light">Elige un estilo</li>
+                            <li class="list-group-item bg-light">Principales destinos</li>
+                            <li class="list-group-item bg-light">Ahorra en estancias</li>
+                            <li class="list-group-item mb-4 bg-light"> </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-dark my-3 mb-lg-0 mt-lg-2" data-bs-toggle="modal"
+                            data-bs-target="#modalSuscribeteUno">
+                            Suscribirse
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-5">
+                <div class="card text-center bg-light">
+                    <div class="card-body">
+                        <div class="h2">
+                            $3.99
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light">Elige un estilo</li>
+                            <li class="list-group-item bg-light">Principales destinos</li>
+                            <li class="list-group-item bg-light">Ahorra en estancias</li>
+                            <li class="list-group-item bg-light">Atención al cliente 24/7</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-dark my-3 mb-lg-0 mt-lg-2" data-bs-toggle="modal"
+                            data-bs-target="#modalSuscribeteDos">
+                            Suscribirse
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-5">
+                <div class="card text-center bg-light">
+                    <div class="card-body">
+                        <div class="h2">
+                            $4.99
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light">Elige un estilo</li>
+                            <li class="list-group-item bg-light">Principales destinos</li>
+                            <li class="list-group-item bg-light">Ahorra en estancias</li>
+                            <li class="list-group-item bg-light">Atención al cliente 24/7</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-dark my-3 mb-lg-0 mt-lg-2" data-bs-toggle="modal"
+                            data-bs-target="#modalSuscribeteTres">
+                            Suscribirse
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+
+
+
+    <!-- Modal Suscribete Uno -->
+    <div class="modal fade" id="modalSuscribeteUno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalSuscribeteUnoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalSuscribeteUnoLabel">Suscribirse Modal Uno</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, error
+                        molestias! Dicta soluta ex consectetur magnam accusamus, necessitatibus eaque nobis!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Suscribete Dos -->
+    <div class="modal fade" id="modalSuscribeteDos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalSuscribeteDosLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalSuscribeteDosLabel">Suscribirse Modal Dos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, odit esse? Cum, itaque. Architecto temporibus cupiditate aspernatur nesciunt. Repellat, voluptates!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Suscribete Tres -->
+    <div class="modal fade" id="modalSuscribeteTres" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modalSuscribeteTresLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalSuscribeteTresLabel">Suscribirse Modal Tres</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, necessitatibus.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
